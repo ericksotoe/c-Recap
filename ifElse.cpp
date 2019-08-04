@@ -24,6 +24,8 @@ int main() {
     cout << "file has been deleted" << endl;
   } else if (value == 1) {
     cout << "adding new record" << endl;
+  } else {
+    cout << "invalid option" << endl;
   }
    
   return 0;
