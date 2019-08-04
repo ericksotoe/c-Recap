@@ -1,5 +1,13 @@
-all:
-	g++ output.cpp -o hello
+all: hello
+
+hello: output.o
+	g++ output.o -o hello
+
+output.o: output.cpp
+	g++ -c output.cpp
+
+run:
+	./hello
 
 clean:
-	rm hello out
+	rm -rf *.o hello
