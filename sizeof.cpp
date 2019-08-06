@@ -2,9 +2,18 @@
 using namespace std;
 
 int main() {
-  int value = 34;
-  cout << sizeof(int) << endl;
+  string animals[][3] = {
+    {"fox", "dad", "cat"},
+    {"mouse", "squirrel", "parrot"}
+  };
 
+// iterates through the animals multi array using sizeof
+for (int i = 0; i < sizeof(animals) / sizeof(animals[0]); i++) {
+  for (int j = 0; j < sizeof(animals[0]) / sizeof(string); j++) {
+    cout << animals[i][j] << " " << flush; 
+  }
+  cout << endl;
+}
 
   return 0;
 }
