@@ -1,7 +1,12 @@
 #include <iostream>
 #include "Cat.h"
+
 using namespace std;
 
-int main() {
-  return 0;
+void Cat::speak() {
+  cout << "Meow!" << endl;
+}
+
+void Cat::jump() {
+  cout << "jumping to top of bookcase" << endl;
 }
