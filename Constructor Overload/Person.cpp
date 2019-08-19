@@ -9,9 +9,9 @@ Person::Person() {
   age = 0;
 }
 
-Person::Person(string newName, int newAge) {
-  name = newName;
-  age = newAge;
+Person::Person(string name, int age) {
+  this->name = name;
+  this->age = age;
 }
 
 string Person::toString() {
