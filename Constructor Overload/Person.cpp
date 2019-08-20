@@ -4,15 +4,6 @@
 
 using namespace std;
 
-Person::Person() {
-  name = "undefined";
-  age = 0;
-}
-
-Person::Person(string name, int age) {
-  this->name = name;
-  this->age = age;
-}
 
 string Person::toString() {
   stringstream ss;

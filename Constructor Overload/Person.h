@@ -11,9 +11,9 @@ private:
   int age;
 
 public:
-  Person();
+  Person(): name("unnamed"), age(0) {};
   Person(string name) {this->name = name; age = 0;};
-  Person(string name, int age);
+  Person(string name, int age): name(name), age(age) {};
   string toString();
 };
 
