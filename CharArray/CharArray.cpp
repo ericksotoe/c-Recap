@@ -18,6 +18,15 @@ int main() {
     cout << i << ": " << texts[i] << endl;
   }
 
+  int k = 0;
+  while (true) {
+    if (text1[k] == 0) 
+      break;
+
+    cout << text1[k] << flush;
+    k++;
+  }
+
 
   return 0;
 }
