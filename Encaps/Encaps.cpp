@@ -8,7 +8,7 @@ private:
   string getName() { return name; }
 
 public:
-  Frog(string name): name(name) {}
+  Frog(string name) : name(name) {}
   // string getName() { return name; }
   void info() { cout << "My name is: " << getName() << endl; }
 };
