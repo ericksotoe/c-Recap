@@ -17,7 +17,7 @@ class Animal {
     }
 
     ~Animal() {
-      cout << "Destructor called" << endl;
+      cout << "Destructor called on " << this->name << endl;
     }
 
     void setName(string name) {
@@ -30,14 +30,22 @@ class Animal {
 
 };
 
+Animal* createAnimal() {
+  Animal *pAnimal = new Animal();
+  pAnimal->setName("Betty");
+  return pAnimal;
+}
+
 int main() {
+
+  Animal *frog = createAnimal();
+  frog->speak();
+
   Animal *pCat1 = new Animal();
   pCat1->setName("Erick"); // same as (*pCat1).setName("Erick")
   pCat1->speak();
-  delete pCat1;
-
-  cout << sizeof(pCat1) << endl;
-  
+  delete pCat1;  
+  delete frog;
 
   return 0;
 }
