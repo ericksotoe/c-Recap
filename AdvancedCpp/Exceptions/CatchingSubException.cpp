@@ -20,9 +20,9 @@ int main() {
   try {
     goesWrong();
     // catch exceptions from subclass first and parent at end
-  } catch (bad_alloc &e) {
+  } catch (bad_alloc& e) {
     cout << "catching badAll " << e.what() << endl;
-  } catch (exception &e) {
+  } catch (exception& e) {
     cout << "catching except " << e.what() << endl;
   }
   return 0;

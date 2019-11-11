@@ -3,7 +3,7 @@ using namespace std;
 
 class MyException : public exception {
 public:
-  virtual const char *what() const throw() { return "Something bad happened"; }
+  virtual const char* what() const throw() { return "Something bad happened"; }
 };
 
 class Test {
@@ -17,7 +17,7 @@ int main() {
 
   try {
     test.goesWrong();
-  } catch (MyException &e) {
+  } catch (MyException& e) {
     cout << "exception thrown is " << e.what() << endl;
   }
   return 0;
